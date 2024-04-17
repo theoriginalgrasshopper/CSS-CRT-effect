@@ -1,0 +1,27 @@
+/*CRT EFFECT*/
+button{
+    animation: textflicker 0.5s linear infinite;
+}
+img{
+    animation: textflicker 0.5s linear infinite;
+}
+html{
+animation-duration: 0.5s;
+animation-name: textflicker;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+    from {
+        box-shadow: 0px 0 0 #ea36af, -1px -0px 0px #75fa69;
+      }
+      to {
+        box-shadow: -1px -0px 0px #75fa69, 0px 0 0 #ea36af
+      }
+  }
